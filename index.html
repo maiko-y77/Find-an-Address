@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Postal Code Search Engine</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1><i class="bi bi-signpost"></i> Postal Code Search Engine <span>探</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About This Site</a></li>
+                <li><a href="#contact">Contact Us(*Report Glitch)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="search">
+            <img src="mtfuji.jpg" alt="">
+            <div class="container">
+                <h2>Find an address in Japan</h2>
+                <p>Search for a Japanese address by postal code.Please enter your postal code.*7 digits</p>
+                <input type="text" id="zip_code" placeholder="Type Postal Code" maxlength="7">
+                <button type="button" id="search_button"><i class="bi bi-search"></i></button>
+                <div id="search_result"></div>
+            </div>
+        </div>
+        <section id="about" class="wrapper">
+            <h2 class="sec-title">About This Site</h2>
+            <p id="aboutus">In Japan, postcards are used as cultural greetings for seasonal milestones and notifications
+                in the event
+                of misfortune.
+                On this site, just by entering the zip code, the address in kanji will be displayed, so even those who
+                can't write Japanese can copy and paste.</p>
+        </section>
+        <section id="contact" class="wrapper">
+            <h2 class="sec-title">Contact Us(*Report Glitch)</h2>
+            <form action="#" method="post">
+                <dl>
+                    <dt><label for="name">Name</label></dt>
+                    <dd><input type="text" id="name" placeholder="Your name"></dd>
+                    <dt><label for="email">Email</label></dt>
+                    <dd><input type="email" id="email" placeholder="Your email"></dd>
+                    <dt><label for="contents">Contents</label></dt>
+                    <dd><textarea id="content" cols="30" rows="10" placeholder="Report issue"></textarea></dd>
+                </dl>
+                <div class="button"><input type="submit" value="SEND"></div>
+            </form>
+        </section>
+
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
