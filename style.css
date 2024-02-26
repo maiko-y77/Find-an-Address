@@ -24,10 +24,10 @@ p {
 img {
     max-width: 100%;
     width: 100%;
-    max-width: 1920px;
+    /* max-width: 1920px; */
     height: 600px;
     object-fit: cover;
-    object-position: 50% 40%;
+    object-position: 50% 55%;
 }
 
 li {
